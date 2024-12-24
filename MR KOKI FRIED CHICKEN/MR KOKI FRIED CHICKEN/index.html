@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Mr Koki Fried Chicken</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            background-image: url(./images/Logo\ Ayam\ HD.jpeg); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+/* Section Gallary Start */
+.galeri{
+    margin-top: 50px;
+}
+.galeri .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.galeri .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.galeri .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+
+/* Discover */
+.discover{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.discover .discoverImg{
+    width: 1500px;
+}
+
+.discover .discoverImg img{
+    width: 100%;
+}
+
+.discover ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.discover li{
+    margin-right: 15px;
+}
+
+.discover .discoverText li:nth-child(1) button{
+    background-color: #6347f9;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 4px 2px 14px -3px rgba(0,0,0,0.75);
+}
+
+.discover .discoverText li:nth-child(2) button{
+    background-color: #fff;
+    color: #6347f9;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 4px 2px 14px -3px rgba(0,0,0,0.75);
+}
+
+.discover .discoverText li:nth-child(1) button:hover{
+    background-color: #fff;
+    color: #6347f9;
+}
+
+.discover .discoverText li:nth-child(2) button:hover{
+    background-color: #6347f9;
+    color: #fff;
+}
+
+.discover .discoverText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.discover .discoverText p{
+    margin: 20px;
+    color: gray;
+}
+
+.discover .discoverText img{
+    width: 500px;
+}
+
+.discover .surf img{
+    width: 200px;
+}
+ /* Support */
+ .support {
+            padding: 4rem 5%;
+        }
+
+        .support .card {
+            width: 100%;
+        }
+
+ /* Newsletter */    
+ .newslatter {
+            padding: 4rem 5%;
+            background-image: url('images/news.jpg');
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newslatter input {
+            width: 100%;
+            padding: 15px;
+            background-color: #1f3347;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .newslatter button {
+            background-color: #6347f9;
+            padding: 15px;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer .card {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer .card p {
+            color: gray;
+            margin: 10px 0;
+        }
+
+        footer .card h3 {
+            color: #1f3347;
+        }
+
+        footer .card ul {
+            display: flex;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        footer .card li {
+            margin-right: 20px;
+            color: #1f3347;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #1f3347;
+        }
+
+        footer .cardBx {
+            display: flex;
+            align-items: center;
+            color: #1f3347;
+        }
+
+        footer .cardBx p {
+            font-size: 15px;
+        }
+
+        footer .cardBx i {
+            margin-right: 10px;
+            font-size: 25px;    
+        }
+
+        footer .galleryBx {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        footer .galleryBx img {
+            width: 70px;
+            border-radius: 5px;
+        }
+
+        .footer2 {
+            background-color: #f4f6fa;
+            padding: 15px;
+            text-align: center;
+            color: #1f3347;
+        }
+
+        @media (min-width: 768px) {
+            footer .card {
+                width: 32%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Makan dulu yuk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="daftar_paket.php">Daftar Menu </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modifikasi_pesan.php">Modifikasi Pesanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.php">Kontak Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang di Mr Koki Fried Chicken</h1>
+            <p class="lead">Jelajahi CitraRasa dan Kenikmatan hidangan terbaik bersama kami!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <h2 class="text-center">Daftar Menu</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Paket float small.png" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket float small </h5>
+                        <p class="card-text">Paket lengkap dengan berbagai fasilitas</p>
+                        <p class="text-center text-primary fw-bold">5 Days 4 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng chicken nugget.jpg" class="card-img-top" alt="" height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng chicken nugget</h5>
+                        <p class="card-text">Termasuk semua layanan full 
+                        service.</p>
+                        <p class="text-center text-primary fw-bold">4 Days 3 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur dadar.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur dadar</h5>
+                        <p class="card-text">Termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">3 Days 2 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                     
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur ceplok.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur ceplok</h5>
+                        <p class="card-text">termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">2 Days 1 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center">Daftar Menu</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Paket float small.png" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket float small </h5>
+                        <p class="card-text">Paket lengkap dengan berbagai fasilitas</p>
+                        <p class="text-center text-primary fw-bold">5 Days 4 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng chicken nugget.jpg" class="card-img-top" alt="" height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng chicken nugget</h5>
+                        <p class="card-text">Termasuk semua layanan full 
+                        service.</p>
+                        <p class="text-center text-primary fw-bold">4 Days 3 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur dadar.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur dadar</h5>
+                        <p class="card-text">Termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">3 Days 2 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                     
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur ceplok.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur ceplok</h5>
+                        <p class="card-text">termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">2 Days 1 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center">Daftar Menu</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Paket float small.png" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket float small </h5>
+                        <p class="card-text">Paket lengkap dengan berbagai fasilitas</p>
+                        <p class="text-center text-primary fw-bold">5 Days 4 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng chicken nugget.jpg" class="card-img-top" alt="" height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng chicken nugget</h5>
+                        <p class="card-text">Termasuk semua layanan full 
+                        service.</p>
+                        <p class="text-center text-primary fw-bold">4 Days 3 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur dadar.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur dadar</h5>
+                        <p class="card-text">Termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">3 Days 2 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                     
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur ceplok.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur ceplok</h5>
+                        <p class="card-text">termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">2 Days 1 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center">Daftar Menu</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Paket float small.png" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket float small </h5>
+                        <p class="card-text">Paket lengkap dengan berbagai fasilitas</p>
+                        <p class="text-center text-primary fw-bold">5 Days 4 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng chicken nugget.jpg" class="card-img-top" alt="" height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng chicken nugget</h5>
+                        <p class="card-text">Termasuk semua layanan full 
+                        service.</p>
+                        <p class="text-center text-primary fw-bold">4 Days 3 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur dadar.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur dadar</h5>
+                        <p class="card-text">Termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">3 Days 2 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                     
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur ceplok.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur ceplok</h5>
+                        <p class="card-text">termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">2 Days 1 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center">Daftar Menu</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Paket float small.png" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket float small </h5>
+                        <p class="card-text">Paket lengkap dengan berbagai fasilitas</p>
+                        <p class="text-center text-primary fw-bold">5 Days 4 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng chicken nugget.jpg" class="card-img-top" alt="" height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng chicken nugget</h5>
+                        <p class="card-text">Termasuk semua layanan full 
+                        service.</p>
+                        <p class="text-center text-primary fw-bold">4 Days 3 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur dadar.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur dadar</h5>
+                        <p class="card-text">Termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">3 Days 2 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                     
+                        <a href="#" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/Nasi goreng telur ceplok.jpg" class="card-img-top" alt="" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi goreng telur ceplok</h5>
+                        <p class="card-text">termasuk penginapan, makan, dan transportasi.</p>
+                        <p class="text-center text-primary fw-bold">2 Days 1 Night</p>
+                        <div class="star d-flex">
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star checked" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                            <i class="fa-solid fa-star" style="color: lightgray;"></i>
+                        </div>
+                        <a href="daftar_paket.php" class="btn btn-primary">Daftar Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Section Gallary Start -->
+<section class="galeri" id="">
+    <div class="container">
+
+      <div class="main-txt">
+        <h2 class="text-center mb-4">Galeri Wisata</h2>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/bandung1.webp" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/bandung1.webp" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/bandung1.webp" alt="" height="230px">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/bandung.jpg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/bandung2.jpg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="images/bandung.jpg" alt="" height="230px">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Section Gallary End -->
+
+    <div class="discover">
+        <div class="discoverImg">
+            <img src="images/discover.png" alt="Discover Image">
+        </div>
+        <div class="discoverText">
+            <img src="images/dic2.png" alt="Diskon Image">
+            <img src="images/dicBg.png" alt="Background Image">
+            <p>Jelajahi berbagai pilihan wisata yang menarik dan nikmati pengalaman yang tak terlupakan. Temukan keindahan dan keunikan setiap destinasi yang kami tawarkan!</p>
+            <ul>
+                <li><button>Jelajahi Sekarang</button></li> <li><button>Selengkapnya</button></li>
+            </ul>
+        </div>
+        <div class="surf">
+        <img src="images/surf.png" alt="Surf Image">
+        </div>
+    </div>
+
+    <!-- Support Section -->
+    <div class="support">
+        <h2 class="text-center mb-4">Dukungan</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fa fa-plane fa-2x mb-3"></i>
+                        <h5 class="card-title">Transportasi</h5>
+                        <p class="card-text">Kami menyediakan berbagai opsi transportasi yang nyaman dan aman.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fa fa-bed fa-2x mb-3"></i>
+                        <h5 class="card-title">Akomodasi</h5>
+                        <p class="card-text">Penginapan berkualitas dengan harga yang terjangkau.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fa fa-utensils fa-2x mb-3"></i>
+                        <h5 class="card-title">Kuliner</h5>
+                        <p class="card-text">Nikmati berbagai kuliner khas daerah selama perjalanan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Newsletter -->
+    <div class="newslatter text-center">
+        <div>
+            <h3 class="mb-4">Berlangganan Newsletter</h3>
+            <div class="d-flex justify-content-center">
+                <input type="email" placeholder="Email Anda">
+                <button>Berlangganan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="card">
+            <h3>Tentang Kami</h3>
+            <p>Kami adalah perusahaan yang bergerak di bidang jasa perjalanan wisata dengan fokus pada kenyamanan pelanggan.</p>
+        </div>
+        <div class="card">
+            <h3>Ikuti Kami</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Galeri</h3>
+            <div class="galleryBx">
+                <img src="images/thumb1.jpg" alt="Foto Bandung">
+                <img src="images/thumb2.jpg" alt="Foto Jogja">
+                <img src="images/thumb3.jpg" alt="Foto Palembang">
+                <img src="images/thumb4.jpg" alt="Foto Medan">
+                <img src="images/thumb5.jpg" alt="Foto Medan">
+                <img src="images/thumb6.jpg" alt="Foto Medan">
+            </div>
+        </div>
+    </footer>
+    <div class="footer2">
+        <p>&copy; 2024 Wisata Dulu Kuy. Semua Hak Dilindungi.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
